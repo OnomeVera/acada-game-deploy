@@ -1,0 +1,12 @@
+name: Test Workflow!
+
+on:
+  workflow_dispatch:
+
+    inputs:
+        test:
+            description: ubuntu-latest
+
+            required:
+                - name: Say Hello
+                    run: echo "Workflow is working!"
